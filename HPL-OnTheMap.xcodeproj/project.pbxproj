@@ -55,13 +55,37 @@
 			isa = PBXGroup;
 			children = (
 				9DCD3FD01EA2A83300EAC3FD /* AppDelegate.swift */,
-				9DCD3FD21EA2A83300EAC3FD /* ViewController.swift */,
+				9DCD3FE41EA2AC1C00EAC3FD /* Supporting Files */,
+				9DCD3FE31EA2AC1000EAC3FD /* View Controllers */,
+				9DCD3FE21EA2AC0200EAC3FD /* Assets */,
+			);
+			path = "HPL-OnTheMap";
+			sourceTree = "<group>";
+		};
+		9DCD3FE21EA2AC0200EAC3FD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
 				9DCD3FD41EA2A83300EAC3FD /* Main.storyboard */,
 				9DCD3FD71EA2A83300EAC3FD /* Assets.xcassets */,
 				9DCD3FD91EA2A83300EAC3FD /* LaunchScreen.storyboard */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		9DCD3FE31EA2AC1000EAC3FD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9DCD3FD21EA2A83300EAC3FD /* ViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9DCD3FE41EA2AC1C00EAC3FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				9DCD3FDC1EA2A83300EAC3FD /* Info.plist */,
 			);
-			path = "HPL-OnTheMap";
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
