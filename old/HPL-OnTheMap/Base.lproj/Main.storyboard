@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="HPL_OnTheMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PwP-fi-Tjc">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="EE9-v3-Nu5" userLabel="Udacity Image View">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="asP-KV-lUd"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login To Udacity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3t-yn-x5D">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="aeP-zc-M6R"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <color key="textColor" red="0.97923474772364316" green="1" blue="0.96447490072340136" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lvh-r2-6QB">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="ZjL-n8-rIN"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n1A-Wd-Eb5">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="Xrk-Fy-jPl"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEd-Lf-VkK">
+                                        <color key="backgroundColor" red="1" green="0.28478412077720094" blue="0.091037714731256991" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="A4w-wE-cUd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <color key="tintColor" red="1" green="0.54188232137253711" blue="0.28506764671823115" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="0.93993073400988825" green="1" blue="0.9213457469446642" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginActionStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tgj-hY-2RB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zs-fU-uIu">
+                                        <color key="backgroundColor" red="1" green="0.28478412079999998" blue="0.091037714729999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="95b-78-wm1"/>
+                                        </constraints>
+                                        <state key="normal" title="Don't have an account? Sign Up">
+                                            <color key="titleColor" red="0.98876498017078962" green="1" blue="0.96731785552460114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DiB-V6-Bti">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="mBq-Oh-PDa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <color key="textColor" red="0.95228963742452633" green="1" blue="0.95610636066687094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="594" id="Ibx-9y-Ve3"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Zn-B3-wYi" customClass="LoadingView" customModule="HPL_OnTheMap" customModuleProvider="target">
+                                <frame key="frameInset" minX="67" minY="269" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.55725504746169485" blue="0.076760171747463968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="PwP-fi-Tjc" secondAttribute="trailing" id="5w0-8h-cZH"/>
+                            <constraint firstItem="PwP-fi-Tjc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="Qz8-hM-jAV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PwP-fi-Tjc" secondAttribute="bottom" constant="18" id="aLS-9A-9FH"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="PwP-fi-Tjc" secondAttribute="leading" id="dwF-1b-rbY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="debugLabel" destination="DiB-V6-Bti" id="p68-De-a7I"/>
+                        <outlet property="debugTextLabel" destination="DiB-V6-Bti" id="YkK-8c-RUu"/>
+                        <outlet property="loginButton" destination="FEd-Lf-VkK" id="hgA-KI-MdT"/>
+                        <outlet property="passwordField" destination="n1A-Wd-Eb5" id="eY8-le-Tdq"/>
+                        <outlet property="passwordTextField" destination="n1A-Wd-Eb5" id="cmT-nx-GR8"/>
+                        <outlet property="signupButton" destination="5zs-fU-uIu" id="iep-J5-GvN"/>
+                        <outlet property="unameTextField" destination="Lvh-r2-6QB" id="9cT-4c-84B"/>
+                        <outlet property="usernameField" destination="Lvh-r2-6QB" id="n7j-Au-XmY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178" y="-51"/>
+        </scene>
+        <!--HPL On The Map-->
+        <scene sceneID="jTP-YL-811">
+            <objects>
+                <viewController id="eSk-ng-bsc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qyj-5c-TuC"/>
+                        <viewControllerLayoutGuide type="bottom" id="FJ8-hW-RqA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DNQ-n0-UKi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="I0I-yZ-7Te">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ueY-ke-0eF">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ueY-ke-0eF" id="38h-wq-HeP">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" image="ListSelected" id="Ku5-v8-gYK"/>
+                    <navigationItem key="navigationItem" title="HPL On The Map" id="iVY-mq-b9b">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="bhU-7h-kEX"/>
+                        <rightBarButtonItems>
+                            <barButtonItem image="Refresh" id="Qbp-Dq-ma8" userLabel="Refresh"/>
+                            <barButtonItem image="Pin" id="ZX8-R2-eXj" userLabel="Pin"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JCD-Cy-hWv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2492" y="278"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="sU3-Vh-Gkk">
+            <objects>
+                <navigationController id="sIn-OU-zcl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="vZN-RM-nCm"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="g2L-pg-k4R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qXG-Q5-KA0" kind="relationship" relationship="rootViewController" id="2Bq-ox-q0v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N8i-8y-mrJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1641" y="-385"/>
+        </scene>
+        <!--HPL On The Map-->
+        <scene sceneID="DQH-Mh-0q6">
+            <objects>
+                <viewController id="qXG-Q5-KA0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aAT-R9-rqx"/>
+                        <viewControllerLayoutGuide type="bottom" id="LE3-uY-DFK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qij-U2-4PM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ESw-DN-ADz">
+                                <frame key="frameInset" minY="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" image="MapViewSelected" id="dRQ-Jr-5Yb"/>
+                    <navigationItem key="navigationItem" title="HPL On The Map" id="P9q-dY-vnz">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="MZF-8a-Spa"/>
+                        <rightBarButtonItems>
+                            <barButtonItem image="Refresh" id="nlv-Ku-caj" userLabel="Refresh"/>
+                            <barButtonItem image="Pin" id="4y9-3V-ilx" userLabel="Pin"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2VE-0z-Ppn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2492" y="-385"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Y4e-lv-5cL">
+            <objects>
+                <navigationController id="Smv-M0-F1P" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Ktu-kF-UIy"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nw5-up-SGg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="eSk-ng-bsc" kind="relationship" relationship="rootViewController" id="FKy-zS-K1v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ilf-o6-1zf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1641" y="279"/>
+        </scene>
+        <!--MapTabBarController-->
+        <scene sceneID="jDz-Ww-z13">
+            <objects>
+                <tabBarController storyboardIdentifier="MapTabBarController" title="MapTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kx6-Ba-0Zd" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="f3x-sR-0OG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="sIn-OU-zcl" kind="relationship" relationship="viewControllers" id="1lJ-6E-uQY"/>
+                        <segue destination="Smv-M0-F1P" kind="relationship" relationship="viewControllers" id="8i4-JO-bdf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yKw-9t-cpe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="-52"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ListSelected" width="75" height="50"/>
+        <image name="Logo" width="62" height="62"/>
+        <image name="MapViewSelected" width="75" height="50"/>
+        <image name="Pin" width="24" height="24"/>
+        <image name="Refresh" width="24" height="24"/>
+    </resources>
+</document>
