@@ -24,6 +24,7 @@
 		1A6B04551B61A605001FFE77 /* ParseConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6B04541B61A605001FFE77 /* ParseConvenience.swift */; };
 		1AB3A2921B757E6800CEEA71 /* TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB3A2911B757E6800CEEA71 /* TextFieldDelegate.swift */; };
 		1AC596691B6408E200C1ADAD /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC596681B6408E200C1ADAD /* PostViewController.swift */; };
+		9DCD40111EA421FC00EAC3FD /* TMDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCD40101EA421FC00EAC3FD /* TMDConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		1A6B04541B61A605001FFE77 /* ParseConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseConvenience.swift; sourceTree = "<group>"; };
 		1AB3A2911B757E6800CEEA71 /* TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldDelegate.swift; sourceTree = "<group>"; };
 		1AC596681B6408E200C1ADAD /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		9DCD40101EA421FC00EAC3FD /* TMDConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMDConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				1A6B04541B61A605001FFE77 /* ParseConvenience.swift */,
 				1A6B04521B619FC2001FFE77 /* UdacityConvenience.swift */,
 				1A6B044D1B6198E4001FFE77 /* OTMConstants.swift */,
+				9DCD40101EA421FC00EAC3FD /* TMDConstants.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				1A6B04481B619817001FFE77 /* MapViewController.swift in Sources */,
 				1A6B04531B619FC2001FFE77 /* UdacityConvenience.swift in Sources */,
 				1A5B98BF1B6F35710050B635 /* Data.swift in Sources */,
+				9DCD40111EA421FC00EAC3FD /* TMDConstants.swift in Sources */,
 				1AC596691B6408E200C1ADAD /* PostViewController.swift in Sources */,
 				1A6B044C1B6198C1001FFE77 /* OTMClient.swift in Sources */,
 				1A58C7661B7185220056FBFC /* WebViewController.swift in Sources */,
