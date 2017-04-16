@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import FBSDKCoreKit
 
 class ListViewController: UITableViewController {
     
@@ -22,12 +21,8 @@ class ListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Set up bar button items.
-        if FBSDKAccessToken.current() != nil {
-            navigationItem.leftBarButtonItem = closeButton
-        } else {
+        // Set up bar button item
             navigationItem.leftBarButtonItem = logoutButton
-        }
         
         self.navigationItem.setRightBarButtonItems([refreshButton, postButton], animated: true)
     }

@@ -14,12 +14,11 @@ class PostViewController: UIViewController, UITextFieldDelegate {
 // MARK: - Outlets
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var mapView: MKMapView!
-    @IBOutlet weak var section1: UIView!
-    @IBOutlet weak var section2: UIView!
-    @IBOutlet weak var section3: UIView!
+    @IBOutlet weak var linkEntry: UIView!
+    @IBOutlet weak var locationEntry: UIView!
+    @IBOutlet weak var submitOrFind: UIView!
     @IBOutlet weak var findButton: UIButton!
     @IBOutlet weak var submitButton: UIButton!
-    @IBOutlet weak var verifyButton: UIButton!
     @IBOutlet weak var studyingLabel: UILabel!
     @IBOutlet weak var linkLabel: UILabel!
     @IBOutlet weak var linkTextField: UITextField!
@@ -38,7 +37,6 @@ class PostViewController: UIViewController, UITextFieldDelegate {
         // Set up UI.
         self.mapView.isHidden = true
         self.submitButton.isHidden = true
-        self.verifyButton.isHidden = true
         self.linkTextField.isHidden = true
         self.linkLabel.isHidden = true
     
@@ -53,18 +51,6 @@ class PostViewController: UIViewController, UITextFieldDelegate {
     
 // MARK: - Actions
 
-    // Allows user to verify their web link
-    @IBAction func verifyLink(_ sender: AnyObject) {
-        Data.sharedInstance().testLink = linkTextField.text
-        
-//        let webViewController = self.storyboard!.instantiateViewController(withIdentifier: "WebView")
-//        
-//        present(webViewController, animated: true, completion: nil)
-        
-        let mediaURL = linkTextField.text
-        UIApplication.shared.openURL(URL(string: mediaURL!)!)
-    }
-    
     // Locates the address provided by user and adds a pin to the map.
     @IBAction func findLocation(_ sender: AnyObject) {
         Data.sharedInstance().mapString = locationTextField.text
@@ -118,20 +104,18 @@ class PostViewController: UIViewController, UITextFieldDelegate {
     
 // MARK: - Additional methods
     
-    // Drops pin on the map for user provided location.
+    // Add a user location and setup the second UI
     func addUserLocation(_ placemarks: [AnyObject]) {
         
         let placemarks = placemarks as! [CLPlacemark]
         Data.sharedInstance().region = self.setRegion(placemarks)
-        self.makeSecondView()
+        self.setupViewWithMap()
         
         let annotation = MKPointAnnotation()
         let latitude = Data.sharedInstance().region.center.latitude
         let longitude = Data.sharedInstance().region.center.longitude
         annotation.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-        
-        
-        mapView.setRegion(Data.sharedInstance().region, animated: true)
+mapView.setRegion(Data.sharedInstance().region, animated: true)
         mapView.addAnnotation(annotation)
     }
     
@@ -162,17 +146,16 @@ class PostViewController: UIViewController, UITextFieldDelegate {
     }
 
     // Sets up UI after geocoding location.
-    func makeSecondView() {
+    func setupViewWithMap() {
         self.mapView.isHidden = false
         self.submitButton.isHidden = false
-        self.verifyButton.isHidden = false
-        self.section2.isHidden = true
-        self.section3.isHidden = true
+        self.locationEntry.isHidden = true
+        self.submitOrFind.isHidden = true
         self.studyingLabel.isHidden = true
         self.linkLabel.isHidden = false
         self.linkTextField.isHidden = false
         self.findButton.isHidden = true
-        self.section1.backgroundColor = UIColor(red: 0.325, green: 0.318, blue: 0.529, alpha: 1)
+        self.linkEntry.backgroundColor = UIColor(red: 0.325, green: 0.318, blue: 0.529, alpha: 1)
     }
     
     // Makes map transparent while geocoding

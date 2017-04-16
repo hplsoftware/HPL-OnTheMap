@@ -271,36 +271,15 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2rI-bp-m7U" customClass="LoadingView" customModule="On_the_Map" customModuleProvider="target">
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="1g3-B5-9aN"/>
-                                    <constraint firstAttribute="width" constant="300" id="LGW-JI-FB8"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="300" id="Mcu-QX-kCR"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="UvW-Zr-BS4"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="fhc-cY-kf4"/>
-                                    <constraint firstAttribute="height" constant="300" id="kBs-tS-hli"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="1g3-B5-9aN"/>
-                                        <exclude reference="Mcu-QX-kCR"/>
-                                        <exclude reference="UvW-Zr-BS4"/>
-                                        <exclude reference="fhc-cY-kf4"/>
-                                    </mask>
-                                </variation>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="aHm-en-mrE" secondAttribute="trailing" constant="-16" id="BHE-pg-SPb"/>
-                            <constraint firstItem="2rI-bp-m7U" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="Cm4-BI-6bS"/>
                             <constraint firstItem="aHm-en-mrE" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="Esq-XS-J7F"/>
                             <constraint firstItem="aHm-en-mrE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="Lud-Dy-De6"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="aHm-en-mrE" secondAttribute="bottom" id="mGJ-mr-npo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aHm-en-mrE" secondAttribute="trailing" constant="-16" id="mzr-o6-dpL"/>
                             <constraint firstItem="aHm-en-mrE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="qDN-dP-Pcq"/>
-                            <constraint firstItem="2rI-bp-m7U" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="125" id="res-ML-aff"/>
                             <constraint firstItem="aHm-en-mrE" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="zjP-4H-Fvu"/>
                         </constraints>
                         <variation key="default">
@@ -313,7 +292,6 @@
                     </view>
                     <connections>
                         <outlet property="debugLabel" destination="rdN-mb-Rm1" id="EjT-Ah-4Xb"/>
-                        <outlet property="loadingView" destination="2rI-bp-m7U" id="fa5-LU-PbR"/>
                         <outlet property="loginButton" destination="iOe-N3-ncg" id="5D1-d2-hQg"/>
                         <outlet property="passwordField" destination="tnp-v6-AgU" id="Dlx-7g-bnw"/>
                         <outlet property="signupButton" destination="nzk-uW-MDD" id="pQk-ye-SiE"/>
@@ -615,21 +593,6 @@ today?</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ui1-BZ-OkP">
-                                        <color key="backgroundColor" red="1" green="0.28478412079999998" blue="0.091037714729999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="4Hm-sd-Js3"/>
-                                            <constraint firstAttribute="height" constant="30" id="iV2-KJ-C2x"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
-                                        <state key="normal" title="Verify link">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="verifyLink:" destination="6FC-Fw-mBV" eventType="touchUpInside" id="He6-rM-y6B"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6E-ZM-9r6">
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="110" id="2qj-9t-gVi"/>
@@ -674,7 +637,6 @@ today?</string>
                                     <constraint firstAttribute="trailing" secondItem="eko-63-khm" secondAttribute="trailing" constant="15" id="Cdb-Cc-JRx"/>
                                     <constraint firstItem="uSa-KQ-wof" firstAttribute="top" secondItem="eko-63-khm" secondAttribute="bottom" constant="125" id="EmF-7R-uar"/>
                                     <constraint firstAttribute="height" constant="200" id="H70-Ck-kMg"/>
-                                    <constraint firstItem="ui1-BZ-OkP" firstAttribute="leading" secondItem="k09-2i-Oyz" secondAttribute="leading" constant="110" id="IUN-dx-ObE"/>
                                     <constraint firstItem="l6E-ZM-9r6" firstAttribute="top" secondItem="k09-2i-Oyz" secondAttribute="top" constant="75" id="YdY-c9-5od"/>
                                     <constraint firstAttribute="trailing" secondItem="eko-63-khm" secondAttribute="trailing" constant="15" id="dVV-Qh-GN9"/>
                                     <constraint firstItem="uSa-KQ-wof" firstAttribute="leading" secondItem="k09-2i-Oyz" secondAttribute="leading" constant="48" id="fLZ-Qo-Z95"/>
@@ -683,7 +645,6 @@ today?</string>
                                     <constraint firstAttribute="width" constant="600" id="jmv-sf-2IO"/>
                                     <constraint firstItem="eko-63-khm" firstAttribute="top" secondItem="k09-2i-Oyz" secondAttribute="top" constant="15" id="rwv-6t-OdV"/>
                                     <constraint firstItem="0CT-lP-SWD" firstAttribute="leading" secondItem="k09-2i-Oyz" secondAttribute="leading" constant="25" id="sMg-Qu-ltz"/>
-                                    <constraint firstItem="ui1-BZ-OkP" firstAttribute="top" secondItem="uSa-KQ-wof" secondAttribute="bottom" constant="5" id="y1U-jN-PDm"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -872,16 +833,15 @@ today?</string>
                     <connections>
                         <outlet property="activityIndicator" destination="gxx-cT-d1E" id="iNW-Tj-fzr"/>
                         <outlet property="findButton" destination="G1x-ws-bsE" id="z0d-lm-fpc"/>
+                        <outlet property="linkEntry" destination="k09-2i-Oyz" id="s89-lC-4So"/>
                         <outlet property="linkLabel" destination="l6E-ZM-9r6" id="7Ac-xV-F8T"/>
                         <outlet property="linkTextField" destination="uSa-KQ-wof" id="vKb-tk-YLx"/>
+                        <outlet property="locationEntry" destination="aI4-bS-QEc" id="Nfa-as-bej"/>
                         <outlet property="locationTextField" destination="R7j-vt-yRJ" id="IQ0-yD-isc"/>
                         <outlet property="mapView" destination="Nc8-AJ-NrK" id="Uln-wa-fgB"/>
-                        <outlet property="section1" destination="k09-2i-Oyz" id="TZu-Ay-bvx"/>
-                        <outlet property="section2" destination="aI4-bS-QEc" id="PMf-bm-pg6"/>
-                        <outlet property="section3" destination="cQD-WK-0P1" id="hns-wo-0ri"/>
                         <outlet property="studyingLabel" destination="0CT-lP-SWD" id="p2c-YW-Jsc"/>
                         <outlet property="submitButton" destination="BED-Ll-eDv" id="S0i-aB-hec"/>
-                        <outlet property="verifyButton" destination="ui1-BZ-OkP" id="sjR-hz-mhP"/>
+                        <outlet property="submitOrFind" destination="cQD-WK-0P1" id="Fvr-BC-Yuc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M4g-Gf-Off" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import FBSDKCoreKit
-import FBSDKLoginKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
 
@@ -18,7 +16,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signupButton: UIButton!
     @IBOutlet weak var debugLabel: UILabel!
-    @IBOutlet weak var loadingView: LoadingView!
     
 // Mark: - Variables
     var session: URLSession?
@@ -35,7 +32,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         session = URLSession.shared
         self.configureUI()
-        loadingView.isHidden = true
         
         // Text field delegates
         self.usernameField.delegate = textDelegate
@@ -74,18 +70,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             usernameField.resignFirstResponder()
             passwordField.resignFirstResponder()
             self.blurLoading()
-            loadingView.isHidden = false
-            loadingView.animateProgressView()
             OTMClient.sharedInstance().udacityLogin(usernameField.text!, password: passwordField.text!, completionHandler: { (success, errorString) -> Void in
                 if success {
                     DispatchQueue.main.async(execute: {
-                        self.loadingView.isHidden = true
                         self.blurView?.removeFromSuperview()
                         self.completeLogin()
                     })
                 } else {
                     DispatchQueue.main.async(execute: {
-                    self.loadingView.isHidden = true
                     self.blurView?.removeFromSuperview()
                     self.displayError(errorString!)
                     })
@@ -93,38 +85,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             })
         }
     }
-    
-//    // Login using Facebook.
-//    @IBAction func facebookLogin(_ sender: AnyObject) {
-//        let fbLoginManager = FBSDKLoginManager()
-//        fbLoginManager.logIn(withReadPermissions: ["email"], handler: { (result: FBSDKLoginManagerLoginResult!, error: NSError!) -> Void in
-//            self.debugLabel.text = ""
-//            if error != nil {
-//                self.viewWillAppear(true)
-//            } else if result.isCancelled {
-//                self.viewWillAppear(true)
-//            } else {
-//                self.blurLoading()
-//                UserDefaults.standard.set(FBSDKAccessToken.current().tokenString!, forKey: "FBAccessToken")
-//                OTMClient.sharedInstance().loginWithFacebook { success, errorString in
-//                    if success {
-//                        DispatchQueue.main.async(execute: {
-//                            self.loadingView.isHidden = true
-//                            self.blurView?.removeFromSuperview()
-//                            self.completeLogin()
-//                        })
-//                    } else {
-//                        DispatchQueue.main.async(execute: {
-//                            self.loadingView.isHidden = true
-//                            self.blurView?.removeFromSuperview()
-//                            self.displayError(errorString!)
-//                        })
-//                    }
-//                }
-//            }
-//        })
-//    }
-//    
 
 // MARK: - Additional methods
     
@@ -158,7 +118,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
             blurView = UIVisualEffectView(effect: blurEffect)
             blurView!.frame = self.view.bounds
-            self.view.insertSubview(blurView!, belowSubview: loadingView)
         } else {
             self.view.backgroundColor = UIColor.black
         }

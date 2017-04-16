@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A4F63AC1B68261500CFE084 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4F63AB1B68261500CFE084 /* Bolts.framework */; };
-		1A4F63AE1B68261900CFE084 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4F63AD1B68261900CFE084 /* FBSDKCoreKit.framework */; };
-		1A4F63B01B68261C00CFE084 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4F63AF1B68261C00CFE084 /* FBSDKLoginKit.framework */; };
 		1A58C7661B7185220056FBFC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A58C7651B7185220056FBFC /* WebViewController.swift */; };
 		1A5B98BF1B6F35710050B635 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5B98BE1B6F35710050B635 /* Data.swift */; };
 		1A6B04281B619751001FFE77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6B04271B619751001FFE77 /* AppDelegate.swift */; };
@@ -25,7 +22,6 @@
 		1A6B04501B619917001FFE77 /* StudentLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6B044F1B619917001FFE77 /* StudentLocations.swift */; };
 		1A6B04531B619FC2001FFE77 /* UdacityConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6B04521B619FC2001FFE77 /* UdacityConvenience.swift */; };
 		1A6B04551B61A605001FFE77 /* ParseConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6B04541B61A605001FFE77 /* ParseConvenience.swift */; };
-		1AB3A2901B740EE600CEEA71 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB3A28F1B740EE600CEEA71 /* LoadingView.swift */; };
 		1AB3A2921B757E6800CEEA71 /* TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB3A2911B757E6800CEEA71 /* TextFieldDelegate.swift */; };
 		1AC596691B6408E200C1ADAD /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC596681B6408E200C1ADAD /* PostViewController.swift */; };
 /* End PBXBuildFile section */
@@ -41,9 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A4F63AB1B68261500CFE084 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		1A4F63AD1B68261900CFE084 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		1A4F63AF1B68261C00CFE084 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		1A58C7651B7185220056FBFC /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		1A5B98BE1B6F35710050B635 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		1A6B04221B619751001FFE77 /* On-the-Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "On-the-Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +56,6 @@
 		1A6B044F1B619917001FFE77 /* StudentLocations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentLocations.swift; sourceTree = "<group>"; };
 		1A6B04521B619FC2001FFE77 /* UdacityConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityConvenience.swift; sourceTree = "<group>"; };
 		1A6B04541B61A605001FFE77 /* ParseConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseConvenience.swift; sourceTree = "<group>"; };
-		1AB3A28F1B740EE600CEEA71 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		1AB3A2911B757E6800CEEA71 /* TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldDelegate.swift; sourceTree = "<group>"; };
 		1AC596681B6408E200C1ADAD /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,9 +65,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A4F63AC1B68261500CFE084 /* Bolts.framework in Frameworks */,
-				1A4F63AE1B68261900CFE084 /* FBSDKCoreKit.framework in Frameworks */,
-				1A4F63B01B68261C00CFE084 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,9 +92,6 @@
 		1A6B04191B619751001FFE77 = {
 			isa = PBXGroup;
 			children = (
-				1A4F63AF1B68261C00CFE084 /* FBSDKLoginKit.framework */,
-				1A4F63AD1B68261900CFE084 /* FBSDKCoreKit.framework */,
-				1A4F63AB1B68261500CFE084 /* Bolts.framework */,
 				1A6B04241B619751001FFE77 /* On-the-Map */,
 				1A6B043A1B619751001FFE77 /* On-the-MapTests */,
 				1A6B04231B619751001FFE77 /* Products */,
@@ -187,7 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				1A6B042B1B619751001FFE77 /* Main.storyboard */,
-				1AB3A28F1B740EE600CEEA71 /* LoadingView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -309,7 +294,6 @@
 				1A6B04281B619751001FFE77 /* AppDelegate.swift in Sources */,
 				1AB3A2921B757E6800CEEA71 /* TextFieldDelegate.swift in Sources */,
 				1A6B04551B61A605001FFE77 /* ParseConvenience.swift in Sources */,
-				1AB3A2901B740EE600CEEA71 /* LoadingView.swift in Sources */,
 				1A6B044A1B619879001FFE77 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
