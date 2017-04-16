@@ -143,8 +143,6 @@ class PostViewController: UIViewController, UITextFieldDelegate {
         for placemark in placemarks {
             
             let coordinate: CLLocationCoordinate2D = placemark.location!.coordinate
-            //let latitude: CLLocationDegrees = placemark.location!.coordinate.latitude
-            //let longitude: CLLocationDegrees = placemark.location!.coordinate.longitude
             let span: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
             
             regions.append(MKCoordinateRegion(center: coordinate, span: span))
