@@ -11,6 +11,7 @@ extension OTMClient {
     struct Constants {
         // Base URLs
         static let UdacityBaseURLSecure: String = "https://www.udacity.com/api"
+        
         static let ParseBaseURLSecure: String = "https://parse.udacity.com/parse/classes/StudentLocation"
         //static let ParseBaseURLSecure: String = "https://parse.udacity.com/parse/classes"
         
