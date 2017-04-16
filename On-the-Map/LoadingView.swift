@@ -32,7 +32,7 @@ class LoadingView: UIView {
         progressLabel = UILabel(frame: CGRect(x: 0.0, y: 0.0, width: frame.width, height: 60.0))
         //progressLabel.textColor = UIColor(name:"White")
         progressLabel.textAlignment = .center
-        progressLabel.text = "Processing"
+        progressLabel.text = "Grabbing Data..."
         progressLabel.font = UIFont(name: "Courier", size: 36.0)
         progressLabel.translatesAutoresizingMaskIntoConstraints = false
         addSubview(progressLabel)

@@ -57,9 +57,12 @@ class PostViewController: UIViewController, UITextFieldDelegate {
     @IBAction func verifyLink(_ sender: AnyObject) {
         Data.sharedInstance().testLink = linkTextField.text
         
-        let webViewController = self.storyboard!.instantiateViewController(withIdentifier: "WebView") 
+//        let webViewController = self.storyboard!.instantiateViewController(withIdentifier: "WebView")
+//        
+//        present(webViewController, animated: true, completion: nil)
         
-        present(webViewController, animated: true, completion: nil)
+        let mediaURL = linkTextField.text
+        UIApplication.shared.openURL(URL(string: mediaURL!)!)
     }
     
     // Locates the address provided by user and adds a pin to the map.
@@ -70,7 +73,7 @@ class PostViewController: UIViewController, UITextFieldDelegate {
         
         let location = locationTextField.text
         let geocoder = CLGeocoder()
-        geocoder.geocodeAddressString(location!, completionHandler: {(placemarks: [CLPlacemark]?, error: NSError?) -> Void in
+        geocoder.geocodeAddressString(location!, completionHandler: {(placemarks: [CLPlacemark]?, error: Error?) -> Void in
             if error != nil {
                 self.displayError("Could not find location", errorString: "Enter location as City, State, Country or Zipcode.")
                 self.activityIndicator.stopAnimating()
@@ -80,7 +83,7 @@ class PostViewController: UIViewController, UITextFieldDelegate {
                 self.activityIndicator.stopAnimating()
                 self.returnTransparency()
             }
-        } as! CLGeocodeCompletionHandler)
+        } )
     }
     
     // Posts user location to Parse server.

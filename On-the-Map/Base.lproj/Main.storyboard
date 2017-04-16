@@ -19,11 +19,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aHm-en-mrE">
-                                <frame key="frameInset" width="600" height="600"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHm-en-mrE">
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7TO-3x-dIv">
-                                        <frame key="frameInset" minX="38" minY="222" width="300" height="40"/>
+                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7TO-3x-dIv">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="MR6-el-99F"/>
                                             <constraint firstAttribute="width" constant="514" id="SRQ-wB-Xsh"/>
@@ -39,8 +37,7 @@
                                             </mask>
                                         </variation>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tnp-v6-AgU">
-                                        <frame key="frameInset" minX="38" minY="270" width="300" height="40"/>
+                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tnp-v6-AgU">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="1uj-4N-5f1"/>
                                             <constraint firstAttribute="height" constant="40" id="7JS-aa-WCS"/>
@@ -58,8 +55,7 @@
                                             </mask>
                                         </variation>
                                     </textField>
-                                    <button opaque="NO" alpha="0.75" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOe-N3-ncg">
-                                        <frame key="frameInset" minX="38" minY="318" width="300" height="40"/>
+                                    <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOe-N3-ncg">
                                         <color key="backgroundColor" red="0.9137254901960784" green="0.21176470588235294" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Rti-fr-HCV"/>
@@ -80,8 +76,7 @@
                                             <action selector="userLogin:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PJq-Se-dd6"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdN-mb-Rm1">
-                                        <frame key="frameInset" minX="65" minY="466" width="246" height="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdN-mb-Rm1">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="NXM-x9-bEP"/>
                                             <constraint firstAttribute="width" constant="246" id="smb-Xy-3y4"/>
@@ -90,8 +85,7 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzk-uW-MDD">
-                                        <frame key="frameInset" minX="38" minY="366" width="300" height="40"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzk-uW-MDD">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="2vt-Rg-8aC"/>
                                             <constraint firstAttribute="height" constant="40" id="jff-On-r3q"/>
@@ -105,8 +99,7 @@
                                             <action selector="signUp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3Tv-fO-4Oy"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Login to Udacity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8l-lm-3H6">
-                                        <frame key="frameInset" minX="65" minY="174" width="246" height="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login to Udacity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8l-lm-3H6">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="3PK-HN-8CQ"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="8zS-Cp-jsv"/>
@@ -380,8 +373,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fyR-R4-tfP">
-                                <frame key="frameInset" width="600" height="600"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fyR-R4-tfP">
                                 <connections>
                                     <outlet property="delegate" destination="Hbq-Zc-VKf" id="xG2-O0-PBQ"/>
                                 </connections>
@@ -426,7 +418,7 @@
                     </connections>
                 </barButtonItem>
             </objects>
-            <point key="canvasLocation" x="1334" y="-92"/>
+            <point key="canvasLocation" x="1333.5" y="-92.5"/>
         </scene>
         <!--List View-->
         <scene sceneID="Z1t-tl-Tu4">
@@ -445,14 +437,14 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7qd-ty-tLj">
-                                            <frame key="frameInset" minX="62" width="298" height="43"/>
+                                            <frame key="frameInset" minX="54" width="306" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Pin" id="Gkg-dp-woT">
-                                            <frame key="frameInset" minX="15" minY="5" width="32" height="32"/>
+                                            <frame key="frameInset" minX="15" minY="9" width="24" height="24"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
@@ -509,15 +501,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DBX-89-AbY">
-                                <frame key="frameInset" width="600" height="556"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DBX-89-AbY">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="Q74-LM-9y3" id="EMT-dT-ZPw"/>
                                 </connections>
                             </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ag-AQ-khb">
-                                <frame key="frameInset" minY="556" width="600" height="44"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ag-AQ-khb">
                                 <items>
                                     <barButtonItem title="Dismiss" id="PJF-VA-MOH">
                                         <connections>
@@ -582,11 +572,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k09-2i-Oyz">
-                                <frame key="frameInset" width="600" height="250"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k09-2i-Oyz">
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eko-63-khm">
-                                        <frame key="frameInset" minX="535" minY="15" width="50" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eko-63-khm">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="7DV-sS-Gwk"/>
                                             <constraint firstAttribute="height" constant="30" id="HPn-cN-aRZ"/>
@@ -623,19 +611,19 @@ today?</string>
                                             <constraint firstAttribute="width" constant="275" id="5ex-Ji-iak"/>
                                             <constraint firstAttribute="height" constant="30" id="U0v-dj-68L"/>
                                         </constraints>
-                                        <color key="textColor" red="0.99958359771573602" green="0.99958359771573602" blue="0.99958359771573602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ui1-BZ-OkP">
-                                        <color key="backgroundColor" red="0.47843137254901963" green="0.47058823529411764" blue="0.64313725490196083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.28478412079999998" blue="0.091037714729999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="4Hm-sd-Js3"/>
                                             <constraint firstAttribute="height" constant="30" id="iV2-KJ-C2x"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                         <state key="normal" title="Verify link">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -708,8 +696,7 @@ today?</string>
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cQD-WK-0P1">
-                                <frame key="frameInset" minY="375" width="600" height="225"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQD-WK-0P1">
                                 <color key="backgroundColor" red="1" green="0.54188232140000003" blue="0.28506764670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="225" id="HTz-Wo-iUI"/>
@@ -723,22 +710,19 @@ today?</string>
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aI4-bS-QEc">
-                                <frame key="frameInset" minY="175" width="600" height="225"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aI4-bS-QEc">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter a location here:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yo9-ar-eWh">
-                                        <frame key="frameInset" minX="50" minY="53" width="500" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your location here:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yo9-ar-eWh">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="vnS-y5-Wcw"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <color key="textColor" red="0.98876498020000003" green="1" blue="0.96731785550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R7j-vt-yRJ">
-                                        <frame key="frameInset" minX="50" minY="98" width="500" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R7j-vt-yRJ">
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.28478412079999998" blue="0.091037714729999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -761,24 +745,22 @@ today?</string>
                                     </mask>
                                 </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1x-ws-bsE">
-                                <frame key="frameInset" minX="113" minY="468" width="150" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1x-ws-bsE">
                                 <color key="backgroundColor" red="1" green="0.28478412079999998" blue="0.091037714729999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="eSj-2c-8Ks"/>
                                     <constraint firstAttribute="height" constant="40" id="hba-eN-AC3"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <state key="normal" title="Find on the Map">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="findLocation:" destination="6FC-Fw-mBV" eventType="touchUpInside" id="ygH-P8-C3C"/>
                                 </connections>
                             </button>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Nc8-AJ-NrK">
-                                <frame key="frameInset" minY="175" width="600" height="425"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Nc8-AJ-NrK">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="425" id="0jP-Bd-dqr"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="425" id="ecU-6H-fA2"/>
@@ -804,8 +786,7 @@ today?</string>
                                     </mask>
                                 </variation>
                             </activityIndicatorView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BED-Ll-eDv">
-                                <frame key="frameInset" minX="113" minY="468" width="150" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BED-Ll-eDv">
                                 <color key="backgroundColor" red="1" green="0.28478412079999998" blue="0.091037714729999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="0H5-l9-yek"/>
@@ -813,9 +794,9 @@ today?</string>
                                     <constraint firstAttribute="width" constant="150" id="SUd-6C-vLn"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="bd6-di-CgS"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <state key="normal" title="Submit">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="default">
@@ -909,9 +890,9 @@ today?</string>
         </scene>
     </scenes>
     <resources>
-        <image name="ListView" width="32" height="32"/>
-        <image name="MapView" width="32" height="32"/>
-        <image name="Pin" width="32" height="32"/>
+        <image name="ListView" width="75" height="50"/>
+        <image name="MapView" width="75" height="50"/>
+        <image name="Pin" width="24" height="24"/>
         <image name="Udacity" width="256" height="256"/>
     </resources>
 </document>

@@ -91,11 +91,11 @@ class ListViewController: UITableViewController {
         let location = Data.sharedInstance().locations[(indexPath as NSIndexPath).row]
         let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as UITableViewCell!
         
-        let firstName = location.firstName
-        let lastName = location.lastName
+        let fName = location.firstName
+        let lName = location.lastName
         let mediaURL = location.mediaURL
         
-        cell!.textLabel!.text = "\(firstName) \(lastName)"
+        cell!.textLabel!.text = "\(fName) \(lName)"
         cell!.detailTextLabel?.text = mediaURL
         
         cell!.imageView!.contentMode = UIViewContentMode.scaleAspectFit
