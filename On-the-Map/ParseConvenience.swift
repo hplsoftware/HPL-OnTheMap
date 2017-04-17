@@ -44,12 +44,12 @@ extension OTMClient {
         let method = ""
         let jsonBody: [String: AnyObject] = [
             "uniqueKey": UserDefaults.standard.string(forKey: "UdacityUserID")! as AnyObject,
-            "firstName": Data.sharedInstance().userFirstName as AnyObject,
-            "lastName": Data.sharedInstance().userLastName as AnyObject,
-            "mapString": Data.sharedInstance().mapString as AnyObject,
-            "mediaURL": Data.sharedInstance().mediaURL as AnyObject,
-            "latitude": Data.sharedInstance().region.center.latitude as AnyObject,
-            "longitude": Data.sharedInstance().region.center.longitude as AnyObject
+            "firstName": Data.sharedInstance.userFirstName as AnyObject,
+            "lastName": Data.sharedInstance.userLastName as AnyObject,
+            "mapString": Data.sharedInstance.mapString as AnyObject,
+            "mediaURL": Data.sharedInstance.mediaURL as AnyObject,
+            "latitude": Data.sharedInstance.region.center.latitude as AnyObject,
+            "longitude": Data.sharedInstance.region.center.longitude as AnyObject
         ]
         
         self.taskForPOSTMethod(parameters, baseURL: baseURL, method: method, jsonBody: jsonBody) { result, error in
@@ -58,7 +58,7 @@ extension OTMClient {
                 completionHandler(false, "Please check your network connection and try again.")
             } else {
                 if let results = result?.value(forKey: OTMClient.JsonResponseKeys.ObjectId) as? String {
-                    Data.sharedInstance().objectID = results
+                    Data.sharedInstance.objectID = results
                     completionHandler(true, "successful")
                 } else {
                     completionHandler(false, "Please try again.")
@@ -76,12 +76,12 @@ extension OTMClient {
         let method = Methods.UpdateLocation
         let jsonBody: [String: AnyObject] = [
             "uniqueKey": UserDefaults.standard.string(forKey: "UdacityUserID")! as AnyObject,
-            "firstName": Data.sharedInstance().userFirstName as AnyObject,
-            "lastName": Data.sharedInstance().userLastName as AnyObject,
-            "mapString": Data.sharedInstance().mapString as AnyObject,
-            "mediaURL": Data.sharedInstance().mediaURL as AnyObject,
-            "latitude": Data.sharedInstance().region.center.latitude as AnyObject,
-            "longitude": Data.sharedInstance().region.center.longitude as AnyObject
+            "firstName": Data.sharedInstance.userFirstName as AnyObject,
+            "lastName": Data.sharedInstance.userLastName as AnyObject,
+            "mapString": Data.sharedInstance.mapString as AnyObject,
+            "mediaURL": Data.sharedInstance.mediaURL as AnyObject,
+            "latitude": Data.sharedInstance.region.center.latitude as AnyObject,
+            "longitude": Data.sharedInstance.region.center.longitude as AnyObject
         ]
         
         self.taskForPutMethod(parameters, baseURL: baseURL, method: method, jsonBody: jsonBody) { result, error in

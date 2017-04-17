@@ -53,7 +53,7 @@ class PostViewController: UIViewController, UITextFieldDelegate {
 
     // Locates the address provided by user and adds a pin to the map.
     @IBAction func findLocation(_ sender: AnyObject) {
-        Data.sharedInstance().mapString = locationTextField.text
+        Data.sharedInstance.mapString = locationTextField.text
         self.makeTransparent()
         activityIndicator.startAnimating()
         
@@ -76,7 +76,7 @@ class PostViewController: UIViewController, UITextFieldDelegate {
     @IBAction func postLocation(_ sender: AnyObject) {
         if linkTextField.text!.isEmpty {
             displayError("Link required", errorString: "Please enter a website link to share.")
-        } else if Data.sharedInstance().objectID != nil {
+        } else if Data.sharedInstance.objectID != nil {
             OTMClient.sharedInstance().updateLocation { (success, error) -> Void in
                 if success {
                     self.dismiss(animated: true, completion: nil)
@@ -85,7 +85,7 @@ class PostViewController: UIViewController, UITextFieldDelegate {
                 }
             }
         } else {
-            Data.sharedInstance().mediaURL = linkTextField.text
+            Data.sharedInstance.mediaURL = linkTextField.text
             OTMClient.sharedInstance().postLocation { (success, error) -> Void in
                 if success {
                     self.dismiss(animated: true, completion: nil)
@@ -108,14 +108,14 @@ class PostViewController: UIViewController, UITextFieldDelegate {
     func addUserLocation(_ placemarks: [AnyObject]) {
         
         let placemarks = placemarks as! [CLPlacemark]
-        Data.sharedInstance().region = self.setRegion(placemarks)
+        Data.sharedInstance.region = self.setRegion(placemarks)
         self.setupViewWithMap()
         
         let annotation = MKPointAnnotation()
-        let latitude = Data.sharedInstance().region.center.latitude
-        let longitude = Data.sharedInstance().region.center.longitude
+        let latitude = Data.sharedInstance.region.center.latitude
+        let longitude = Data.sharedInstance.region.center.longitude
         annotation.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-mapView.setRegion(Data.sharedInstance().region, animated: true)
+mapView.setRegion(Data.sharedInstance.region, animated: true)
         mapView.addAnnotation(annotation)
     }
     

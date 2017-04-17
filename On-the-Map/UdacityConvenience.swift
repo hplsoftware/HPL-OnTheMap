@@ -83,9 +83,9 @@ extension OTMClient {
             } else {
                 if let userDictionary = result?.value(forKey: OTMClient.JsonResponseKeys.User) as? NSDictionary {
                     if let firstName = userDictionary.value(forKey: OTMClient.JsonResponseKeys.UserFirstName) as? String {
-                        Data.sharedInstance().userFirstName = firstName
+                        Data.sharedInstance.userFirstName = firstName
                         if let lastName = userDictionary.value(forKey: OTMClient.JsonResponseKeys.UserLastName) as? String {
-                            Data.sharedInstance().userLastName = lastName
+                            Data.sharedInstance.userLastName = lastName
                             completionHandler(true, "successful")
                         }
                     }

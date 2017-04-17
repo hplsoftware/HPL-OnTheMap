@@ -30,12 +30,6 @@ class Data: NSObject {
     
 // MARK: - Shared Instance
     
-    class func sharedInstance() -> Data {
-        
-        struct Singleton {
-            static var sharedInstance = Data()
-        }
-        
-        return Singleton.sharedInstance
-    }
+static let sharedInstance = Data()
+    
 }

@@ -39,7 +39,7 @@ class ListViewController: UITableViewController {
     
     // Gets post view controller.
     @IBAction func postUserLocation(_ sender: AnyObject) {
-        if Data.sharedInstance().objectID != nil {
+        if Data.sharedInstance.objectID != nil {
             self.displayErrorWithHandler("Location exists.", errorString: "Do you want to update your location or link?")
         } else {
             OTMClient.sharedInstance().getUserData { (success: Bool, error: String) -> Void in
@@ -83,7 +83,7 @@ class ListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cellReuseIdentifier = "Student List"
-        let location = Data.sharedInstance().locations[(indexPath as NSIndexPath).row]
+        let location = Data.sharedInstance.locations[(indexPath as NSIndexPath).row]
         let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as UITableViewCell!
         
         let fName = location.firstName
@@ -100,16 +100,16 @@ class ListViewController: UITableViewController {
     
     // Retrieves number of rows.
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if Data.sharedInstance().locations == nil {
+        if Data.sharedInstance.locations == nil {
             self.getStudentLocations()
         }
-        return Data.sharedInstance().locations.count
+        return Data.sharedInstance.locations.count
     }
     
     // Opens URL in browser when row is tapped.
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let location = Data.sharedInstance().locations[(indexPath as NSIndexPath).row]
+        let location = Data.sharedInstance.locations[(indexPath as NSIndexPath).row]
         let mediaURL = location.mediaURL
         UIApplication.shared.openURL(URL(string: mediaURL)!)
         
@@ -121,7 +121,7 @@ class ListViewController: UITableViewController {
     func getStudentLocations() {
         OTMClient.sharedInstance().getStudentLocations { locations, errorString in
             if let locations = locations {
-                Data.sharedInstance().locations = locations
+                Data.sharedInstance.locations = locations
                 DispatchQueue.main.async {
                     self.listView.reloadData()
                 }

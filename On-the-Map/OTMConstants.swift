@@ -12,7 +12,7 @@ extension OTMClient {
         // Base URLs
         static let UdacityBaseURLSecure: String = "https://www.udacity.com/api"
         
-        static let ParseBaseURLSecure: String = "https://parse.udacity.com/parse/classes/StudentLocation"
+        static let ParseBaseURLSecure: String = "https://parse.udacity.com/parse/classes/StudentLocation?order=-updatedAt,-createdAt&limit=100"
         //static let ParseBaseURLSecure: String = "https://parse.udacity.com/parse/classes"
         
         // URL Keys
@@ -26,7 +26,7 @@ extension OTMClient {
         static let FacebookSession: String = "/session"
         static let UdacityData: String = "/users/"
         static let UpdatedAt: String = "?order=-updatedAt"
-        static let UpdateLocation: String = "/" + Data.sharedInstance().objectID
+        static let UpdateLocation: String = "/" + Data.sharedInstance.objectID
     }
     
     struct JsonResponseKeys {

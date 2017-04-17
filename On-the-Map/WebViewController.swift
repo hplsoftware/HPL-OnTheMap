@@ -16,7 +16,7 @@ class WebViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         // Build the URL
-        let url = URL(string: Data.sharedInstance().testLink)!
+        let url = URL(string: Data.sharedInstance.testLink)!
         let request = URLRequest(url: url)
         
         // Make the request

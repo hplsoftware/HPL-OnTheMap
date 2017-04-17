@@ -72,7 +72,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     
     // Gets post view controller
     @IBAction func postUserLocation(_ sender: AnyObject) {
-        if Data.sharedInstance().objectID != nil {
+        if Data.sharedInstance.objectID != nil {
             self.displayErrorWithHandler("Location exists.", errorString: "Do you want to update your location or link?")
         } else {
             OTMClient.sharedInstance().getUserData { (success: Bool, error: String) -> Void in
@@ -117,7 +117,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     func getStudentLocations() {
         OTMClient.sharedInstance().getStudentLocations { locations, errorString -> Void in
             if let locations = locations {
-                Data.sharedInstance().locations = locations
+                Data.sharedInstance.locations = locations
                 self.displayMap()
             } else {
                 self.displayError("Error fetching locations", errorString: errorString!)
@@ -155,7 +155,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     func displayMap() {
         DispatchQueue.main.async {
             
-            for dictionary in Data.sharedInstance().locations {
+            for dictionary in Data.sharedInstance.locations {
                 
                 let lat = CLLocationDegrees(dictionary.latitude as Double)
                 let long = CLLocationDegrees(dictionary.longitude as Double)

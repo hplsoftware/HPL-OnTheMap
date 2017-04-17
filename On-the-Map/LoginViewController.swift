@@ -36,9 +36,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         // Text field delegates
         self.usernameField.delegate = textDelegate
         self.passwordField.delegate = textDelegate
-        
-        usernameField.text = "rob.s@hplsoftware.com"
-        passwordField.text = "Enigma!3138"
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
